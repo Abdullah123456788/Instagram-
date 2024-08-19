@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-logo {
+    width: 150px;
+}
+
+.splash-screen-text {
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: medium;
+    color: #000;
+}
+
+.stories {
+    display: flex;
+    padding: 20px 0;
+}
+
+.story {
+    margin-right: 15px;
+}
+
+.story img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ff8501;
+    padding: 2px;
+}
+
+.feed {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.post-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post-username {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    display: inline;
+}
+.verified-icon {
+    color: #1DA1F2;
+    margin-left: 5px;
+}
+.post-username1 {
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.post-username2 {
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto; 
+    margin-top: 18px;
+}
+
+.post-img {
+    width: 100%;
+    display: block;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    color: #000;
+    margin-right: 15px;
+}
+
+.post-actions button i {
+    font-size: 1.2em;
+}
+.post-caption {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.post-actions button:hover {
+    color: gray; 
+}
+.save-button{
+    margin-left: auto; 
+}
+.post-caption {
+    padding: 10px;
+}
+
+.post-caption .post-username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.footer-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer-profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer-icon {
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    width: auto;
+    
+}
+.right-sidebar {
+    display: none; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    border-left: 1px solid #dbdbdb;
+    padding: 20px;
+    overflow-y: auto;
+}
+.suggested-people {
+    margin-top: 20px;
+}
+
+.suggested-person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.suggested-person img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.follow-button {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-logo .logo {
+    margin: 0;
+    font-size: 2.5em;
+    color: #000;
+}
+
+.header-logo button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #000;
+    margin-left: auto;
+}
+.header-logo .search-bar {
+    margin: 0 15px;
+    padding: 5px 10px;
+    background-color: lightgray;
+    border: 2px  gray;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+    flex-grow: 1;
+}
+
+.header-logo button i {
+    font-size: 1.2em;
+}
+
+.header-logo button:hover {
+    color: gray; 
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .left-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: #fff;
+        border-right: 1px solid #dbdbdb;
+        padding: 20px 0;
+    }
+
+    .left-sidebar .logo {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 60px;
+        width:auto;
+        border-top: none;
+    }
+    
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        padding: 0;
+    }
+    
+    .footer-icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 1.5em; 
+        padding-top: 10px;
+        padding-left: 10px;
+        width: auto;
+    }
+    
+    .footer-icon span {
+        margin-left: 10px;
+        font-size: 1em; 
+    }
+    .right-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: 100vh;
+        background-color: #fff;
+        border-left: 1px solid #dbdbdb;
+        padding: 20px;
+    }
+    .right-sidebar .follow-button{
+        border: none;
+        background-color: transparent;
+        color: blue;
+        padding-left: 100px;
+
+    }
+    .right-sidebar .follow-button2{
+        border: none;
+        background-color: transparent;
+        color: black;
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+    .right-sidebar .suggested-person span{
+            display: block;
+    }
+    .right-sidebar .follow-button:hover{
+        color:#000
+        
+    }
+    .header-logo button
+    {
+        display: none;
+    }
+    .header-logo .search-bar
+    {
+        display: none;
+    }
+   
+}
+@media screen and (max-width: 999px) {
+    .footer-icon span {
+        display: none;
+    }
+    
+}
